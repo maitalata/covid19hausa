@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Duru Sans:200i,400&display=swap');
+
+.main-content {
+    background-image: url('../images/covid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-banner{
+    filter: opacity(0.9);
+}
+
+.head-text{
+    font-family: 'Duru Sans';
+}
+
+.text-main{
+    font-size: 21px;
+    font-family: 'Duru Sans';
+}
+
+button{
+    font-family: 'Duru Sans';
+}

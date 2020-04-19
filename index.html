@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cutar Coronavirus | Auna Kanka</title>
+		  <meta charset="utf-8">
+
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
+		  <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="main-content"  >
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-lg-6 col-sm-8 col-xs-12 col-md-8 p-4 text-white bg-primary offset-lg-3 main-banner " id="main_pane" >
+					<h1 class="text-center head-text">Cutar Coronavirus (Auna Da Kanka)</h1>
+					<h2 class="text-danger text-center head-text">SHARADI</h2>
+					<p class="text-justify text-main">
+						Wannan manhaja ba ta nufin tabbataccen gwajin Coronavirus, samun tabbatacin cewar mutum 
+						na dauke da cutar ko akasin haka se gwaajin asibiti wanda hukumomin da abin ya shafa suke yi.
+						Wannan Manhaja kawai tana kokarin hasashen cewar mutum na dauke da coronavirus ta hanyar amsa wadansu
+						'yan tambayoyi.
+					</p>
+					<p class="text-justify text-main">
+						Zaka iya yiwa kanka ko kuma kayiwa wani wannan awo. Za kuma a iya sake yi a duk lokacin da mutum yake son ya kara yi.
+					</p>
+
+	
+					<div class="row p-2">
+						<button id="start" class="btn btn-dark col p-2 m-2">Danna Nan Domin Farawa</button> 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/bootstrap.min.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+		
+		<script>
+
+			$(document).on('click', '#start', function(){
+				$('#main_pane').html('');
+				var out = `<div class='form-group m-2'>
+										<h2 class='head-text'>Kana/kina cikin wani yanayi ne na rashin lafiya a yanzu?</h2>
+										<div class="row">
+											<button class="btn btn-dark col m-2" id="gg" >Eh</button>
+											<button class="btn btn-dark col m-2" id="not_sick" >A'a</button>
+										</div>
+									</div>`;
+				$('#main_pane').append(out);
+			});
+
+			$('#not_sick').click( function(){
+				$('#main_pane').html('');
+				var noOutput = `<h2 class='text-danger'>Tunda Baka Wata Rashind lafiya, 
+									akwai zato me kyau cewa lafiyarka kalau.</h2>
+									<h3>Kada a manta da wadannan matakai na kariya</h3>
+									<ul>
+										<li>Wanke hannaye</li>
+										<li>Bayar da tazara</li>
+										<li>Bayar da tazara</li>
+									</ul>
+									`;
+				$('#main_pane').append(noOutput);
+			});
+
+			$(document).on('click', '#not_sick', function(){
+				$('#main_pane').html('');
+				var out = `<div class='form-group m-2'>
+										<h2 class='head-text text-justify'>
+											Tunda ba'a cikin wani yanayi na rashin lafiya,
+											 akwai zato me kyau na cewa baka dauke da wannan cuta ta coronavirus
+										</h2>
+										<br>
+										<p class='text-main'>
+											Kada a manta da hanyoyin kariya na wannan cuta
+											<ul class='text-main'>
+												<li>Wanke hannu akai-akai</li>
+												<li>Bayar da tazara</li>
+												<li>Rufe Hanci da baki da gwiwar hannu a lokacin da akeyin tari ko atishawa</li>
+												<li>A zauna a gida abi umarnin hukuma a wuraren da aka bayar da umarnin hakan</li>
+											</ul>
+										</p>
+										<div class="row">
+											<button class="btn btn-dark col m-2" id="gg" >Eh</button>
+											<button class="btn btn-dark col m-2" id="not_sick" >A'a</button>
+										</div>
+									</div>`;
+				$('#main_pane').append(out);
+			});
+			
+			
+			$('#my_btn').click( function(){
+				$('#main_pane').html('');
+				var yesOutput = `<div class='form-group m-2'>
+										<label>Zabi rukunin shekaru</label>
+										<div class="row">
+											<button class="btn btn-dark col m-2" id="zero_to_ten" >0 - 10</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">11 - 20</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">21 - 30</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">31 - 40</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">41 - 50</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">51 - 60</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">Sama da 60</button>
+										</div>
+									</div>`;
+				$('#main_pane').append(yesOutput);
+			});
+					
+			$(document).on('click', '#zero_to_ten', function(){
+				$('#main_pane').html('');
+				var out = `<div class='form-group m-2'>
+										<label>Me yake damunka?</label>
+										<div class="row">
+											<button class="btn btn-dark col m-2" id="fever" >Matsananciyar wahala wajen yin numfashi</button>
+										</div>
+										<div class="row">
+											<button class="btn btn-dark col m-2">Ciwon Kirji Mai Tsanani</button>
+										</div>
+									</div>`;
+				$('#main_pane').append(out);
+			});
+			
+			$(document).on('click', '#fever', function(){
+				$('#main_pane').html('');
+				var out = `<div class='form-group m-2'>
+										<label>Kayi Tafiya ne a kwana?</label>
+										<div class="row">
+											<button class="btn btn-dark col m-2" id="gg" >Eh</button>
+											<button class="btn btn-dark col m-2" id="gh" >A'a</button>
+										</div>
+									</div>`;
+				$('#main_pane').append(out);
+			});
+			
+		</script>
+		
+	</body>
+</html>
