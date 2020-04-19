@@ -22,3 +22,20 @@
 button{
     font-family: 'Duru Sans';
 }
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
