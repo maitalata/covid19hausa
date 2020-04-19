@@ -7,7 +7,7 @@
 }
 
 .main-banner{
-    filter: opacity(0.9);
+    opacity: 0.9;
 }
 
 .head-text{
@@ -38,4 +38,8 @@ a{
 a:hover{
     color: red;
     text-decoration: underline;
+}
+
+img{
+    opacity: 1.0;
 }
