@@ -44,7 +44,7 @@
 				var out = `<div class='form-group m-2'>
 										<h2 class='head-text'>Kana/kina cikin wani yanayi ne na rashin lafiya a yanzu?</h2>
 										<div class="row">
-											<button class="btn btn-dark col m-2" id="gg" >Eh</button>
+											<button class="btn btn-dark col m-2" id="is_sick" >Eh</button>
 											<button class="btn btn-dark col m-2" id="not_sick" >A'a</button>
 										</div>
 									</div>`;
@@ -87,10 +87,10 @@
 			});
 			
 			
-			$('#my_btn').click( function(){
+			$(document).on('click', '#is_sick', function(){
 				$('#main_pane').html('');
 				var yesOutput = `<div class='form-group m-2'>
-										<label>Zabi rukunin shekaru</label>
+										<h2 class='head-text'>Zabi rukunin shekaru</h2>
 										<div class="row">
 											<button class="btn btn-dark col m-2" id="zero_to_ten" >0 - 10</button>
 										</div>
