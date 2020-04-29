@@ -41,7 +41,10 @@
 												<li>Rufe Hanci da baki da gwiwar hannu a lokacin da akeyin tari ko atishawa</li>
 												<li>A zauna a gida abi umarnin hukuma a wuraren da aka bayar da umarnin hakan</li>
 											</ul>
-										</p>
+                                        </p>
+                                        </p><div class="row">
+                                            <button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+                                        </div>
 									</div>`;
 				$('#main_pane').append(out);
 			});
@@ -55,7 +58,7 @@
 											<button class="btn btn-dark col m-2" id="zero_to_ten" >0 - 10</button>
 										</div>
 										<div class="row">
-											<button class="btn btn-dark col m-2"id="twnety" >11 - 20</button>
+											<button class="btn btn-dark col m-2" id="twenty" >11 - 20</button>
 										</div>
 										<div class="row">
 											<button class="btn btn-dark col m-2" id="thirty" >21 - 30</button>
@@ -618,7 +621,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -631,7 +634,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -644,7 +647,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -657,7 +660,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -670,7 +673,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -683,7 +686,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 						</div>`;
@@ -695,7 +698,7 @@
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka. <br>
 								Kowa yana cikin hadarin kamuwa da wannan cuta ta coronavirus, amma abin yafi tsanani ga wadanda suka fara manyanta, 
 								Saboda haka dole a lura sosai.<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -716,6 +719,54 @@
 								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
 							</div>
 						</div>`;
+                }
+                
+                if(has_fever && has_tiredness && has_dry_cough){
+					out = `<div class='form-group m-2'>
+							<p class='text-main text-justify'> 
+                                Alamomi na nunawa ana dauke da wannan cuta ta coronavirus<br>
+                                Ayi kokarin killace kai da saurin kiran hukuma domin sanin mataki na gaba.
+							</p>
+							<div class="row">
+								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+							</div>
+							</div>`;
+                }
+                
+                if(breathing_problem && sore_throat && pain_and_aches){
+					out = `<div class='form-group m-2'>
+							<p class='text-main text-justify'> 
+                                Alamomi na nunawa ana dauke da wannan cuta ta coronavirus<br>
+                                Ayi kokarin killace kai da saurin kiran hukuma domin sanin mataki na gaba.
+							</p>
+							<div class="row">
+								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+							</div>
+							</div>`;
+                }
+                
+                if(has_fever && has_tiredness && has_dry_cough && breathing_problem && sore_throat){
+					out = `<div class='form-group m-2'>
+							<p class='text-main text-justify'> 
+								Da akwai alamomi masu karfi na cewar ana dauke da wannan cuta ta coronavirus.<br>
+								Ayi gaggawar kiran hukumomi
+							</p>
+							<div class="row">
+								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+							</div>
+							</div>`;
+                }
+                
+                if(has_fever && has_dry_cough && breathing_problem && sore_throat){
+					out = `<div class='form-group m-2'>
+							<p class='text-main text-justify'> 
+								Da akwai alamomi masu karfi na cewar ana dauke da wannan cuta ta coronavirus.<br>
+								Ayi gaggawar kiran hukumomi
+							</p>
+							<div class="row">
+								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+							</div>
+							</div>`;
 				}
 
 				if(has_fever && has_tiredness && has_dry_cough && breathing_problem && sore_throat && pain_and_aches){
@@ -826,7 +877,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -839,7 +890,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -852,7 +903,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -865,7 +916,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -878,7 +929,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -891,7 +942,7 @@
 					out = `<div class='form-group m-2'>
 							<p class='text-main text-justify'> 
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -906,7 +957,7 @@
 								Ba mamaki ana dauke da wannan cuta ta coronavirus ko akasin haka. <br>
 								Kowa yana cikin hadarin kamuwa da wannan cuta ta coronavirus, amma abin yafi tsanani ga wadanda suka fara manyanta, 
 								Saboda haka dole a lura sosai.<br>
-								Ayi kokarin killace kai a guji mu'amala da yin nesa da nmutane har na tsawon sati biyu (2),
+								Ayi kokarin killace kai a guji mu'amala da yin nesa da mutane har na tsawon sati biyu (2),
 								 idan rashin lafiya ya kara tsanani ko aka samu karuwar alamomin wannan cuta ayi kokarin kiran hukomomi.
 							</p>
 							<div class="row">
@@ -929,7 +980,9 @@
 										<li>A zauna a gida abi umarnin hukuma a wuraren da aka bayar da umarnin hakan</li>
 									</ul>
 								
-							</p>
+							</p><div class="row">
+								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
+							</div>
 							<div class="row">
 								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
 							</div>
