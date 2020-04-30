@@ -11,26 +11,12 @@
 				$('#main_pane').append(out);
 			});
 
-			$('#not_sick').click( function(){
-				$('#main_pane').html('');
-				var noOutput = `<h2 class='text-danger'>Tunda Baka Wata Rashind lafiya, 
-									akwai zato me kyau cewa lafiyarka kalau.</h2>
-									<h3>Kada a manta da wadannan matakai na kariya</h3>
-									<ul>
-										<li>Wanke hannaye</li>
-										<li>Bayar da tazara</li>
-										<li>Bayar da tazara</li>
-									</ul>
-									`;
-				$('#main_pane').append(noOutput);
-			});
-
 			$(document).on('click', '#not_sick', function(){
 				$('#main_pane').html('');
 				var out = `<div class='form-group m-2'>
 										<h3 class='head-text text-justify'>
 											Tunda ba'a cikin wani yanayi na rashin lafiya,
-											 akwai zato me kyau na cewa baka dauke da wannan cuta ta coronavirus
+											 akwai zato me kyau na cewa ba'a dauke da wannan cuta ta coronavirus
 										</h3>
 										<br>
 										<p class='text-main'>
