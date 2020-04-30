@@ -969,9 +969,6 @@
 							</p><div class="row">
 								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
 							</div>
-							<div class="row">
-								<button class="btn btn-dark col m-2" id="reload" >Dawo Farko</button>
-							</div>
 						</div>`;
 				}
 
